@@ -10,11 +10,16 @@ function subtrair($a, $b){
     return $a - $b;
 }
 
-// commit v3
+function multiplicar($a, $b){
 
-//criar função dividir (v4) e multiplicar (v5)
+    return $a * $b;
+}
 
-echo "resultado:", subtrair(11,6);
+// commit v4
+
+//criar função  multiplicar (v5)
+
+echo "resultado:", multiplicar(11,6);
 
 
 
