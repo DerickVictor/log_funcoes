@@ -15,12 +15,15 @@ function multiplicar($a, $b){
     return $a * $b;
 }
 
-// commit v4
+function dividir($a, $b){
 
-//criar função  multiplicar (v5)
+    return $a / $b;
+}
 
-echo "resultado:", multiplicar(11,6);
+// commit v5
 
+
+echo "resultado:", dividir(11,6);
 
 
 ?>
