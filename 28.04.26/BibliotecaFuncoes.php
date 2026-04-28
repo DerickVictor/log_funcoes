@@ -46,4 +46,32 @@ namespace areas{
   }
   }
 
+namespace saude{
+  function calcularImc ($peso, $altura){
+    return $peso / ($altura * $altura);
+  }
+
+  function avalorIdealAgua ($peso){
+    return $peso * 35;
+  }
+
+  function frequenciaCardiacaMaxima ($idade){
+    return 208 - 0.7 * $idade;
+  }
+    
+  function converterLibrasParaQuilo ($libras){
+    return $libras * 0.453592;
+  }
+
+  function calcularCaloriasBasais ($peso, $idade, $sexo, $altura){
+    
+    if ($sexo == "masculino"){
+      return $peso * 10 + 6.25 * $altura - 5 * $idade + 5;
+    }
+
+    else{
+      return $peso * 10 + 6.25 * $altura - 5 * $idade - 161;
+    }
+  }
+}
 ?>
